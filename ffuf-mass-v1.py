@@ -50,7 +50,7 @@ if os.path.isfile('command.txt') == True:
 else:
   k = input("Please enter the site list> ")
   print("FFUF will run in default mood")
-  word = raw_input("Give me the wordlist full path> ")
+  word = input("Give me the wordlist full path> ")
   print(word)  
   l = open(k, "r")
   rid = l.readlines()
