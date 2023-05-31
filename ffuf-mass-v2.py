@@ -67,10 +67,10 @@ try:
             j = "".join(test.splitlines())
             if args.wordlist !=None:
                 if args.output !=None:
-                    cmd = "ffuf -u %s -w %s -c -of html -o %s/%s.html -or"%(j,args.wordlist,args.output,out)
+                    cmd = "ffuf -u %s -w %s -c -of html -o %s/%s.html"%(j,args.wordlist,args.output,out)
                 else:
                     cd = os.getcwd()
-                    cmd = "ffuf -u %s -w %s -c -of html -o %s/%s.html -or"%(j,args.wordlist,cd,out)
+                    cmd = "ffuf -u %s -w %s -c -of html -o %s/%s.html"%(j,args.wordlist,cd,out)
 
                 go = "".join(cmd.splitlines())
                 time.sleep(0.10)
